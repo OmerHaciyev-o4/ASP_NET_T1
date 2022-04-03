@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Task1.Entities.Food>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Drinks</title>
+    <style>
+        div{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 5% auto;
+        }
+        div > img{
+            width: 200px;
+            height: 200px;
+        }
+        div > div{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: left;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Food type: Drink</h1>
+    <hr />
+
+    @foreach (var item in Model)
+    {
+        <div>
+            <img src="~/images/@(item.URL)"/>
+            <div>
+                <p>@item.FoodName</p>
+                <p>@item.Price $</p>
+            </div>
+        </div>
+    }
+</body>
+</html>

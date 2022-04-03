@@ -1,0 +1,71 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Main Panel</title>
+    <style>
+        div{
+            display: flex; 
+            flex-direction: row; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            align-items: center;
+            background-color: dodgerBlue; 
+            margin: 5px auto;
+            padding: 10px;
+        }
+        div > select{
+            width: 100px;
+            text-align: center;
+            margin: 0 3%;
+        }
+        div > a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <select>
+            <option selected="selected">Drink</option>
+            <option>Fresh Velvet</option>
+            <option>Molten Bomb</option>
+            <option>Sake Five</option>
+            <option>Stale Slammer</option>
+            <option>Spiced Light</option>
+        </select>
+        <a href="/home/drinks">All Drink Details</a>
+    </div>
+
+    <div>
+        <select>
+            <option selected="selected">Hot Meal</option>
+            <option>Split Pea Soup</option>
+            <option>Pineapple Chicken</option>
+            <option>Lemony Chicken & Orzo Soup</option>
+            <option>Lemony Asparagus Pasta</option>
+            <option>Garlicky Shrimp Zucchini Boats</option>
+        </select>
+        <a href="/home/hotmeal">All Hot Meal Details</a>
+    </div>
+    
+    <div>
+        <select> 
+            <option selected="selected">Fast Food</option>
+            <option>VegaFast.</option>
+            <option>Burganic.</option>
+            <option>Tortilicious.</option>
+            <option>Pancake World.</option>
+            <option>Sweet Munchies.</option>
+        </select>
+        <a href="/home/fastfood">All Fast Food Details</a>
+    </div>
+</body>
+</html>
